@@ -95,14 +95,314 @@ public class GivenBlackBox {
         Double ans = oneBear.calculateSavings();
         assertEquals(oneBearExpected, ans);
     }
+    
+    /**
+     * Test examines a BearFactory with 1 simple bear in it with 1 clothing. 
+     * Expect the savings to be 0.0;
+     */  
+    @Test
+    public void oneBaseBearWithOneClothing() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } 
+        catch (Exception e){
+            Bear customBear = new Bear(Stuffing.stuffing.BASE);
+            bears.addBear(customBear);
+            customBear.clothing.add(new Clothing(4, "Hat"));
+            double bearExpected = 0.0;
+            double ans = bears.calculateSavings();
+            assertEquals(bearExpected, ans, 0.005);
+            
+        } 
+    }
+  ///////////////////////////////////Clothing Savings test///////  
+    /**
+     * Test examines a BearFactory with 1 simple bear in it with 3 clothing at diffrent pricing. ///Brent
+     * Expect the savings to be 4.0;
+     */ 
+    
+    @Test 
+    public void oneBaseBear3clothingsDiffPricesExpectSaving() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } catch (Exception e) {
+        }
+        Bear customBear = new Bear(Stuffing.stuffing.BASE);
+        bears.addBear(customBear);
+    
+        customBear.clothing.add(new Clothing(4, "Hat"));
+        customBear.clothing.add(new Clothing(5, "Sunglasses"));
+        customBear.clothing.add(new Clothing(6, "Shoes"));
+        
+        Double bearsExpected = 4.0;
+        Double ans = bears.calculateSavings();
+        assertEquals(bearsExpected, ans, 0.005);
+    }
+    
+    /**
+     * Test examines a BearFactory with 1 simple bear in it with 3 clothing at diffrent pricing - one number negative. ///Brent
+     * Expect the savings to be -1 or an error;
+     */ 
+    
+    @Test 
+    public void oneBaseBear3clothingsNegativeExpectSaving() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } catch (Exception e) {
+        }
+        Bear customBear = new Bear(Stuffing.stuffing.BASE);
+        bears.addBear(customBear);
+    
+        customBear.clothing.add(new Clothing(-1, "Hat"));
+        customBear.clothing.add(new Clothing(5, "Sunglasses"));
+        customBear.clothing.add(new Clothing(6, "Shoes"));
+        
+        Double bearsExpected = -1.0;
+        Double ans = bears.calculateSavings();
+        assertEquals(bearsExpected, ans, 0.005);
+    }
+    
+      /**
+     * Test examines a BearFactory with 1 simple bear in it with 3 clothing at diffrent pricing - one number 0. ///Brent
+     * Expect the savings to be 0 or an error;
+     */ 
+    
+    @Test 
+    public void oneBaseBear3clothingsoneFreeExpectSaving() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } catch (Exception e) {
+        }
+        Bear customBear = new Bear(Stuffing.stuffing.BASE);
+        bears.addBear(customBear);
+    
+        customBear.clothing.add(new Clothing(0, "Hat"));
+        customBear.clothing.add(new Clothing(5, "Sunglasses"));
+        customBear.clothing.add(new Clothing(6, "Shoes"));
+        
+        Double bearsExpected = 0.0;
+        Double ans = bears.calculateSavings();
+        assertEquals(bearsExpected, ans, 0.005);
+    }
+    
+    /**
+     * Test examines a BearFactory with 1 simple bear in it with 3 clothing at diffrent pricing - all  very large numbers. ///Brent
+     * Expect the savings to be 1.8E+307;
+     */ 
+    
+    @Test 
+    public void oneBaseBear3clothingsLargeNumberExpectSaving() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } catch (Exception e) {
+        }
+        Bear customBear = new Bear(Stuffing.stuffing.BASE);
+        bears.addBear(customBear);
+    
+        customBear.clothing.add(new Clothing(1.8E+307, "Hat"));
+        customBear.clothing.add(new Clothing(1.8E+307, "Sunglasses"));
+        customBear.clothing.add(new Clothing(1.8E+307, "Shoes"));
+        
+        Double bearsExpected = 1.8E+307;
+        Double ans = bears.calculateSavings();
+        assertEquals(bearsExpected, ans, 0.005);
+    }
+    
+    
+    /**
+     * Test examines a BearFactory with 2 simple bearsin it with no clothing. // brent
+     * Expect the savings to be 0.0;
+     */  
+    @Test
+    public void twoBaseBearWithNoClothing() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } 
+        catch (Exception e){
+            Bear customBear1 = new Bear(Stuffing.stuffing.BASE);
+            Bear customBear2 = new Bear(Stuffing.stuffing.BASE);
+            bears.addBear(customBear1);
+            bears.addBear(customBear2);
+           
+            double bearExpected = 0.0;
+            double ans = bears.calculateSavings();
+            assertEquals(bearExpected, ans, 0.005);
+            
+        } 
+    }
+    
+    /**
+     * Test examines a BearFactory with 1 base bear in it with 10 clothing pieces.    //Brent
+     * Expect the savings to be 10% off bear + fee accesorys $12.00;
+     */  
+    @Test
+    public void oneBearTest10clothingsExpectSaving() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } catch (Exception e) {
+        }
+        Bear customBear = new Bear(Stuffing.stuffing.BASE);
+        bears.addBear(customBear);
 
+        customBear.clothing.add(new Clothing(4, "Hat"));
+        customBear.clothing.add(new Clothing(4, "Sunglasses"));
+        customBear.clothing.add(new Clothing(4, "Pants"));
+        customBear.clothing.add(new Clothing(4, "Shoes"));
+        customBear.clothing.add(new Clothing(4, "Socks"));
+        customBear.clothing.add(new Clothing(4, "Watch"));
+        customBear.clothing.add(new Clothing(4, "Hat"));
+        customBear.clothing.add(new Clothing(4, "Necklace"));
+        customBear.clothing.add(new Clothing(4, "Sweater"));
+        customBear.clothing.add(new Clothing(4, "Belt"));
+        
+        Double bearsExpected = 12.0;
+        Double ans = bears.calculateSavings();
+        assertEquals(bearsExpected, ans, 0.005);
+    }
+  
+    /**
+     * Test examines a BearFactory with 1 base bear in it with 10 clothing pieces at different prices.    //Brent
+     * Expect the savings to be 10% off bear + fee accesorys $15.00;
+     */  
+    @Test
+    public void oneBearTest10clothingsDiffPriceExpectSaving() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } catch (Exception e) {
+        }
+        Bear customBear = new Bear(Stuffing.stuffing.BASE);
+        bears.addBear(customBear);
 
+        customBear.clothing.add(new Clothing(5, "Hat"));
+        customBear.clothing.add(new Clothing(5, "Sunglasses"));
+        customBear.clothing.add(new Clothing(4, "Pants"));
+        customBear.clothing.add(new Clothing(5, "Shoes"));
+        customBear.clothing.add(new Clothing(5, "Socks"));
+        customBear.clothing.add(new Clothing(4, "Watch"));
+        customBear.clothing.add(new Clothing(5, "Hat"));
+        customBear.clothing.add(new Clothing(5, "Necklace"));
+        customBear.clothing.add(new Clothing(4, "Sweater"));
+        customBear.clothing.add(new Clothing(5, "Belt"));
+        
+        Double bearsExpected = 15.0;
+        Double ans = bears.calculateSavings();
+        assertEquals(bearsExpected, ans, 0.005);
+    }
+    
+    /**
+     * Test examines a BearFactory with 1 down bear in it with no clothing. 
+     * Expect the savings to be 0.0;
+     */  
+    @Test
+    public void oneDownBearWithnoClothing() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } 
+        catch (Exception e){
+            Bear customBear = new Bear(Stuffing.stuffing.DOWN);
+            bears.addBear(customBear);
+            double bearExpected = 0.0;
+            double ans = bears.calculateSavings();
+            assertEquals(bearExpected, ans, 0.005);
+            
+        } 
+    }
+    
+    /**
+     * Test examines a BearFactory with 1 foam bear in it with no clothing. 
+     * Expect the savings to be 0.0;
+     */  
+    @Test
+    public void oneDownFoamWithnoClothing() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } 
+        catch (Exception e){
+            Bear customBear = new Bear(Stuffing.stuffing.FOAM);
+            bears.addBear(customBear);
+            double bearExpected = 0.0;
+            double ans = bears.calculateSavings();
+            assertEquals(bearExpected, ans, 0.005);
+            
+        } 
+    }
+  
+    
+    /**
+     * Test examines a BearFactory with 1 simple bear in it with no clothing. 
+     * Expect the savings to be 0.0;
+     */  
+    @Test
+    public void oneBaseBearWithnoClothing() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } 
+        catch (Exception e){
+            Bear customBear = new Bear(Stuffing.stuffing.BASE);
+            bears.addBear(customBear);
+            double bearExpected = 0.0;
+            double ans = bears.calculateSavings();
+            assertEquals(bearExpected, ans, 0.005);
+            
+        } 
+    }
+    
     // sample test
     @Test
     public void threeBearsSaveOnCheapest() {
         Double ans = threeBears.calculateSavings();
         assertEquals(threeBearsExpected, ans);
     }
+    
+    /**
+     * Test examines a BearFactory with all 3 bearsin it with 3 diferent clothing each clothing. // brent
+     * Expect the savings to be 34.0;
+     */  
+    @Test
+    public void threeDiffBaseBearThreeClothingEach() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } 
+        catch (Exception e){
+            Bear customBear1 = new Bear(Stuffing.stuffing.BASE);
+            Bear customBear2 = new Bear(Stuffing.stuffing.FOAM);
+            Bear customBear3 = new Bear(Stuffing.stuffing.DOWN);
+            bears.addBear(customBear1);
+            bears.addBear(customBear2);
+            bears.addBear(customBear3);
+            
+            customBear1.clothing.add(new Clothing(4, "Hat"));
+            customBear1.clothing.add(new Clothing(4, "Sunglasses"));
+            customBear1.clothing.add(new Clothing(4, "Pants"));
+            
+            customBear2.clothing.add(new Clothing(4, "Hat"));
+            customBear2.clothing.add(new Clothing(4, "Sunglasses"));
+            customBear2.clothing.add(new Clothing(4, "Pants"));
+            
+            customBear3.clothing.add(new Clothing(4, "Hat"));
+            customBear3.clothing.add(new Clothing(4, "Sunglasses"));
+            customBear3.clothing.add(new Clothing(4, "Pants"));
+           
+            double bearExpected = 34.0;
+            double ans = bears.calculateSavings();
+            assertEquals(bearExpected, ans, 0.005);
+            
+        } 
+    }
+    
+ 
 
     // sample test
  
@@ -116,10 +416,31 @@ public class GivenBlackBox {
         Bear customBear = new Bear(Stuffing.stuffing.BASE);
         bears.addBear(customBear);
 
-	    customBear.clothing.add(new Clothing(4, "Hat"));
-	    customBear.clothing.add(new Clothing(4, "Sunglasses"));
-	    customBear.clothing.add(new Clothing(4, "Shoes"));
-	    
+        customBear.clothing.add(new Clothing(4, "Hat"));
+        customBear.clothing.add(new Clothing(4, "Sunglasses"));
+        customBear.clothing.add(new Clothing(4, "Shoes"));
+        
+        Double bearsExpected = 4.0;
+        Double ans = bears.calculateSavings();
+        assertEquals(bearsExpected, ans, 0.005);
+    }
+    
+ // sample test
+    
+    @Test
+    public void oneBear3clothingsExpectSaving() {
+        BearWorkshop bears = null;
+        try {
+            bears = createBearWorkshop("DC");
+        } catch (Exception e) {
+        }
+        Bear customBear = new Bear(Stuffing.stuffing.BASE);
+        bears.addBear(customBear);
+
+        customBear.clothing.add(new Clothing(4, "Hat"));
+        customBear.clothing.add(new Clothing(4, "Sunglasses"));
+        customBear.clothing.add(new Clothing(4, "Shoes"));
+        
         Double bearsExpected = 4.0;
         Double ans = bears.calculateSavings();
         assertEquals(bearsExpected, ans, 0.005);
