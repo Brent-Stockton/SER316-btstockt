@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.26.0" timestamp="2020-12-01T15:50:24.886">
+<file name="/Users/brentstockton/Desktop/Documents/Assignment6/FinalAssignment/src/main/java/Bear.java">
+<violation beginline="10" endline="10" begincolumn="12" endcolumn="33" rule="LooseCoupling" ruleset="Best Practices" package="main.java" class="Bear" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'LinkedList'; use the interface instead
+</violation>
+<violation beginline="11" endline="11" begincolumn="12" endcolumn="31" rule="LooseCoupling" ruleset="Best Practices" package="main.java" class="Bear" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'LinkedList'; use the interface instead
+</violation>
+<violation beginline="41" endline="53" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="Bear" method="addNoise" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'addNoise(NoiseMaker)' has a cyclomatic complexity of 4.
+</violation>
+</file>
+<file name="/Users/brentstockton/Desktop/Documents/Assignment6/FinalAssignment/src/main/java/BearWorkshop.java">
+<violation beginline="6" endline="216" begincolumn="8" endcolumn="1" rule="ExcessiveClassLength" ruleset="Design" package="main.java" class="BearWorkshop" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#excessiveclasslength" priority="3">
+Avoid really long classes.
+</violation>
+<violation beginline="36" endline="62" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="getCost" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'getCost(Bear)' has a cyclomatic complexity of 5.
+</violation>
+<violation beginline="36" endline="62" begincolumn="12" endcolumn="5" rule="NPathComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="getCost" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#npathcomplexity" priority="3">
+The method 'getCost(Bear)' has an NPath complexity of 12, current threshold is 10
+</violation>
+<violation beginline="66" endline="87" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="getRawCost" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'getRawCost(Bear)' has a cyclomatic complexity of 4.
+</violation>
+<violation beginline="95" endline="118" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="calculateTax" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'calculateTax()' has a cyclomatic complexity of 6.
+</violation>
+<violation beginline="127" endline="134" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="addBear" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'addBear(Bear)' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="137" endline="144" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="removeBear" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'removeBear(Bear)' has a cyclomatic complexity of 2.
+</violation>
+<violation beginline="152" endline="199" begincolumn="12" endcolumn="5" rule="ExcessiveMethodLength" ruleset="Design" package="main.java" class="BearWorkshop" method="checkout" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#excessivemethodlength" priority="3">
+Avoid really long methods.
+</violation>
+<violation beginline="152" endline="199" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="checkout" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'checkout()' has a cyclomatic complexity of 11.
+</violation>
+<violation beginline="152" endline="199" begincolumn="12" endcolumn="5" rule="NPathComplexity" ruleset="Design" package="main.java" class="BearWorkshop" method="checkout" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#npathcomplexity" priority="3">
+The method 'checkout()' has an NPath complexity of 240, current threshold is 10
+</violation>
+</file>
+<file name="/Users/brentstockton/Desktop/Documents/Assignment6/FinalAssignment/src/main/java/Clothing.java">
+<violation beginline="17" endline="25" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="Clothing" method="compareTo" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'compareTo(Clothing)' has a cyclomatic complexity of 3.
+</violation>
+</file>
+<file name="/Users/brentstockton/Desktop/Documents/Assignment6/FinalAssignment/src/main/java/Main.java">
+<violation beginline="7" endline="38" begincolumn="19" endcolumn="5" rule="ExcessiveMethodLength" ruleset="Design" package="main.java" class="Main" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#excessivemethodlength" priority="3">
+Avoid really long methods.
+</violation>
+</file>
+<file name="/Users/brentstockton/Desktop/Documents/Assignment6/FinalAssignment/src/main/java/NoiseMaker.java">
+<violation beginline="14" endline="27" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="NoiseMaker" method="NoiseMaker" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The constructor 'NoiseMaker(String, String, Location)' has a cyclomatic complexity of 2.
+</violation>
+</file>
+<file name="/Users/brentstockton/Desktop/Documents/Assignment6/FinalAssignment/src/main/java/Stuffing.java">
+<violation beginline="13" endline="29" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="main.java" class="Stuffing" method="Stuffing" externalInfoUrl="https://pmd.github.io/pmd-6.26.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The constructor 'Stuffing(stuffing)' has a cyclomatic complexity of 4.
+</violation>
+</file>
+</pmd>
