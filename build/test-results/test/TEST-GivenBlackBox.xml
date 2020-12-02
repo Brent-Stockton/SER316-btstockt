@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GivenBlackBox" tests="80" skipped="0" failures="56" errors="0" timestamp="2020-12-02T04:49:37" hostname="Brents-MacBook-Air.local" time="0.166">
+<testsuite name="GivenBlackBox" tests="80" skipped="0" failures="56" errors="0" timestamp="2020-12-02T05:05:36" hostname="Brents-MacBook-Air.local" time="0.58">
   <properties/>
-  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[0]" classname="GivenBlackBox" time="0.09">
+  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[0]" classname="GivenBlackBox" time="0.24">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.oneBaseBear3clothingsLargeNumberExpectSaving(GivenBlackBox.java:212)
@@ -66,7 +66,7 @@
   </testcase>
   <testcase name="oneBaseBearWithnoClothing[0]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneDownFoamWithnoClothing[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.oneBaseBear3clothingsoneFreeExpectSaving(GivenBlackBox.java:188)
@@ -192,7 +192,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest3clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearTest3clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.005">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.oneBearTest3clothingsExpectSaving(GivenBlackBox.java:424)
@@ -255,7 +255,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.oneBearTest10clothingsDiffPriceExpectSaving(GivenBlackBox.java:296)
@@ -318,8 +318,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithOneClothing[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBearsSaveOnCheapest[0]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBaseBearWithOneClothing[0]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="threeBearsSaveOnCheapest[0]" classname="GivenBlackBox" time="0.002">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.threeBearsSaveOnCheapest(GivenBlackBox.java:364)
@@ -382,7 +382,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.oneBaseBear3clothingsDiffPricesExpectSaving(GivenBlackBox.java:140)
@@ -508,7 +508,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBearTest10clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.oneBearTest10clothingsExpectSaving(GivenBlackBox.java:266)
@@ -572,8 +572,8 @@
 </failure>
   </testcase>
   <testcase name="oneDownBearWithnoClothing[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeDiffBaseBearThreeClothingEach[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBearNoSavings[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="threeDiffBaseBearThreeClothingEach[0]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBearNoSavings[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop1.calculateSavings(BearWorkshop1.java:78)
 	at GivenBlackBox.oneBearNoSavings(GivenBlackBox.java:95)
@@ -636,7 +636,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="twoBaseBearWithNoClothing[0]" classname="GivenBlackBox" time="0.006"/>
+  <testcase name="twoBaseBearWithNoClothing[0]" classname="GivenBlackBox" time="0.004"/>
   <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[1]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
@@ -701,9 +701,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithnoClothing[1]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBaseBearWithnoClothing[1]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneDownFoamWithnoClothing[1]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -767,7 +767,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBear3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneBear3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -831,7 +831,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.003">
+  <testcase name="oneBearTest3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.002">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -895,7 +895,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[1]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[1]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -960,7 +960,7 @@
 </failure>
   </testcase>
   <testcase name="oneBaseBearWithOneClothing[1]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBearsSaveOnCheapest[1]" classname="GivenBlackBox" time="0.003">
+  <testcase name="threeBearsSaveOnCheapest[1]" classname="GivenBlackBox" time="0.002">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -1088,7 +1088,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -1152,7 +1152,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearTest10clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -1216,9 +1216,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneDownBearWithnoClothing[1]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneDownBearWithnoClothing[1]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="threeDiffBaseBearThreeClothingEach[1]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBearNoSavings[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearNoSavings[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop2.calculateSavingsHelper(BearWorkshop2.java:138)
 	at main.java.BearWorkshop2.calculateSavings(BearWorkshop2.java:70)
@@ -1346,7 +1346,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithnoClothing[2]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBaseBearWithnoClothing[2]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneDownFoamWithnoClothing[2]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[2]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
@@ -1411,7 +1411,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBear3clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBear3clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop3.calculateSavings(BearWorkshop3.java:62)
 	at GivenBlackBox.oneBear3clothingsExpectSaving(GivenBlackBox.java:445)
@@ -1601,7 +1601,7 @@
 </failure>
   </testcase>
   <testcase name="oneBaseBearWithOneClothing[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBearsSaveOnCheapest[2]" classname="GivenBlackBox" time="0.001">
+  <testcase name="threeBearsSaveOnCheapest[2]" classname="GivenBlackBox" time="0.002">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop3.calculateSavings(BearWorkshop3.java:62)
 	at GivenBlackBox.threeBearsSaveOnCheapest(GivenBlackBox.java:364)
@@ -1664,7 +1664,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[2]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[2]" classname="GivenBlackBox" time="0.008">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop3.calculateSavings(BearWorkshop3.java:62)
 	at GivenBlackBox.oneBaseBear3clothingsDiffPricesExpectSaving(GivenBlackBox.java:140)
@@ -1790,7 +1790,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearTest10clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.004">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop3.calculateSavings(BearWorkshop3.java:62)
 	at GivenBlackBox.oneBearTest10clothingsExpectSaving(GivenBlackBox.java:266)
@@ -1919,7 +1919,7 @@
 </failure>
   </testcase>
   <testcase name="twoBaseBearWithNoClothing[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[3]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[3]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop4.calculateSavings(BearWorkshop4.java:55)
 	at GivenBlackBox.oneBaseBear3clothingsLargeNumberExpectSaving(GivenBlackBox.java:212)
@@ -1982,9 +1982,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithnoClothing[3]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBaseBearWithnoClothing[3]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneDownFoamWithnoClothing[3]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[3]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[3]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop4.calculateSavings(BearWorkshop4.java:55)
 	at GivenBlackBox.oneBaseBear3clothingsoneFreeExpectSaving(GivenBlackBox.java:188)
@@ -2047,7 +2047,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBear3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBear3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop4.calculateSavings(BearWorkshop4.java:55)
 	at GivenBlackBox.oneBear3clothingsExpectSaving(GivenBlackBox.java:445)
@@ -2110,7 +2110,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneBearTest3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop4.calculateSavings(BearWorkshop4.java:55)
 	at GivenBlackBox.oneBearTest3clothingsExpectSaving(GivenBlackBox.java:424)
@@ -2363,7 +2363,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[3]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[3]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop4.calculateSavings(BearWorkshop4.java:55)
 	at GivenBlackBox.oneBaseBear3clothingsNegativeExpectSaving(GivenBlackBox.java:164)
@@ -2490,8 +2490,8 @@
 </failure>
   </testcase>
   <testcase name="oneDownBearWithnoClothing[3]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeDiffBaseBearThreeClothingEach[3]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="oneBearNoSavings[3]" classname="GivenBlackBox" time="0.0">
+  <testcase name="threeDiffBaseBearThreeClothingEach[3]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearNoSavings[3]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.NoSuchFieldError: BearCart" type="java.lang.NoSuchFieldError">java.lang.NoSuchFieldError: BearCart
 	at main.java.BearWorkshop4.calculateSavings(BearWorkshop4.java:55)
 	at GivenBlackBox.oneBearNoSavings(GivenBlackBox.java:95)
@@ -2762,7 +2762,7 @@ Caused by: java.lang.NoSuchFieldError: BearCart
 	... 62 more
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[4]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[4]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.reflect.InvocationTargetException" type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -2831,7 +2831,7 @@ Caused by: java.lang.NoSuchFieldError: BearCart
 	... 62 more
 </failure>
   </testcase>
-  <testcase name="oneBear3clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBear3clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.reflect.InvocationTargetException" type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -2969,7 +2969,7 @@ Caused by: java.lang.NoSuchFieldError: BearCart
 	... 62 more
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[4]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[4]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.reflect.InvocationTargetException" type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -3038,7 +3038,7 @@ Caused by: java.lang.NoSuchFieldError: BearCart
 	... 62 more
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithOneClothing[4]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBaseBearWithOneClothing[4]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.reflect.InvocationTargetException" type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -3176,7 +3176,7 @@ Caused by: java.lang.NoSuchFieldError: BearCart
 	... 62 more
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[4]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[4]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.reflect.InvocationTargetException" type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -3314,7 +3314,7 @@ Caused by: java.lang.NoSuchFieldError: BearCart
 	... 62 more
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBearTest10clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.reflect.InvocationTargetException" type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -3383,7 +3383,7 @@ Caused by: java.lang.NoSuchFieldError: BearCart
 	... 62 more
 </failure>
   </testcase>
-  <testcase name="oneDownBearWithnoClothing[4]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneDownBearWithnoClothing[4]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.reflect.InvocationTargetException" type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
