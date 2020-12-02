@@ -16,7 +16,7 @@ public class Customer {
     public String state;
 
     /**
-     * Default ctor with state
+     * Default ctor with state.
      */
     public Customer(String state) {
         this.state = state;
@@ -24,7 +24,7 @@ public class Customer {
     }
 
     /**
-     * Parameterized ctor for Customers
+     * Parameterized ctor for Customers.
      * @param age int age of customer
      * @param custumer reference to guardian or null
      */
