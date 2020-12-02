@@ -215,7 +215,35 @@ public class BearWorkshop implements BearWorkshopInterface {
      * @return the savings if the customer would check out as double
      */
     public double calculateSavings() {
-        System.out.println("TODO: Implement me in Assignment 3");
-        return 0.0;
-    }
+        LinkedList<Bear> tmpBearCart = new LinkedList<Bear>();
+        Collections.sort(tmpBearCart);
+        double totalRawCost = 0;
+
+        for (int i = 0; i < BearCart.size(); i++) {
+            tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
+            totalRawCost += tmpBearCart.get(i).price;
+        }
+
+        int numFreeBears = BearCart.size() / 3;
+        for (int i = 0; i < numFreeBears; i++) {
+            tmpBearCart.remove(i);
+        }
+
+        int accessDiscountNum = 10;
+        double totalDiscountPrice = 0.0;
+
+        for (int i = 0; i < tmpBearCart.size(); i++) {
+            int numFreeClothes = tmpBearCart.get(i).clothing.size() / 3;
+            for (int j = 0; j < numFreeClothes; j++) {
+                tmpBearCart.get(i).clothing.remove(j);
+            }
+            tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
+            if (tmpBearCart.get(i).clothing.size() - numFreeClothes
+                    + tmpBearCart.get(i).noisemakers.size() >= accessDiscountNum) {
+                tmpBearCart.get(i).price *= .9;
+            }
+            totalDiscountPrice += tmpBearCart.get(i).price;
+        }
+        return totalRawCost - totalDiscountPrice;
+    }          
 }
