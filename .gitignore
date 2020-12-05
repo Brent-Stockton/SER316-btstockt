@@ -5,6 +5,12 @@
 #classpath
 .classpath
 
+/target/
+/.classpath
+/*.project
+/.settings
+/*.springBeans
+
 # Compiled class file
 *.class
 
