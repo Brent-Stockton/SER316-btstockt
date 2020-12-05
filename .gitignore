@@ -5,6 +5,12 @@
 #classpath
 .classpath
 
+#project
+.project
+
+#gradle
+build.gradle
+
 /target/
 /.classpath
 /*.project
