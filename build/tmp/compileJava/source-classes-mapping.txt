@@ -18,7 +18,10 @@ BearWorkshopInterface.java
  main.java.BearWorkshopInterface
 Customer.java
  main.java.Customer
-BearWorkshop.java
- main.java.BearWorkshop
+GetTax.java
+ main.java.GetTax
 Main.java
  main.java.Main
+BearWorkshop.java
+ main.java.BearWorkshop
+ main.java.BearWorkshop$1

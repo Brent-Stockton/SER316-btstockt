@@ -32,34 +32,26 @@ public class BearWorkshop implements BearWorkshopInterface {
      * @return double representation of bear cost
      * TODO: test me and fix me in assignment 3
      */
-    @Override
     public double getCost(Bear bear) {
+        //get and save the raw cost of the bear
+        double rawCost = getRawCost(bear);
         Collections.sort(bear.clothing);
         int numFree = bear.clothing.size() / 3;
-        ArrayList<Clothing> freeClothes = new ArrayList<>();
-
+        
         for (int i = 0; i < bear.clothing.size(); i++) {
-            Clothing clothes = bear.clothing.get(i);
-            if (i < numFree) {
-                freeClothes.add(clothes);
-            } else {
-                bear.price += clothes.price;
-            }
-        }
-
-        for (NoiseMaker noise: bear.noisemakers) {
-            bear.price += noise.price;
-        }
-
-        if (bear.ink != null) {
-            bear.price += bear.ink.price;
-        }
-
-        bear.price += bear.stuff.price;
-        bear.price *= bear.casing.priceModifier;
-
-        return bear.price;
-    }
+          Clothing clothes = bear.clothing.get(i);
+          if (i < numFree) {       
+            //subtract discount from rawCost
+            rawCost = rawCost - clothes.price;
+          }          
+      }
+    //Here I would determine if the 10% discount is applied and if so
+    // if (10% discount){
+    //    rawCost() * .9;
+    //}
+        
+        return rawCost;
+     }
 
     /** Function to get the raw cost of a bear without any discounts.*/
     // TODO: test me and fix me in assignment 3
@@ -85,6 +77,9 @@ public class BearWorkshop implements BearWorkshopInterface {
         bear.price = 0;
         return bearPrice;
     }
+    
+
+
 
     /**
      * Utility method to calculate tax for purchases by customers in different
@@ -93,29 +88,21 @@ public class BearWorkshop implements BearWorkshopInterface {
      * @return
      */
     public double calculateTax() {
-        double tax;
-        switch (customer.state) {
-            case "AZ":
-                tax = 1.07;
-                break;
-            case "NY":
-                tax = 1.09;
-                break;
-            case "VA":
-                tax = 1.05;
-                break;
-            case "DC":
-                tax = 1.105;
-                break;
-            case "CA":
-                tax = 1.1;
-                break;
-            default:
-                tax = 1.05;
-                break;
+        HashMap<String, Double> taxKey = new HashMap<String, Double>() {{
+        put("AZ", 1.07);
+        put("NY", 1.09);
+        put("VA", 1.05);
+        put("DC", 1.1);
+        put("CA", 1.05);
+        }};
+    
+    if (taxKey.get(customer.state) == null){
+        return 1.05;
+        }   
+    else {
+        return taxKey.get(customer.state);
         }
-        return tax;
-    }
+   }
 
     /**
     * Utility method to add a bear to the BearFactory.
@@ -215,7 +202,33 @@ public class BearWorkshop implements BearWorkshopInterface {
      * @return the savings if the customer would check out as double
      */
     public double calculateSavings() {
-        System.out.println("TODO: Implement me in Assignment 3");
-        return 0.0;
-    }
+
+        LinkedList<Bear> tmpBearCart = new LinkedList<Bear>();
+        Collections.sort(tmpBearCart);
+        double totalRawCost = 0;
+        for (int i = 0; i < bearCart.size(); i++) {
+            tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
+            totalRawCost += tmpBearCart.get(i).price;
+        }
+        int numFreeBears = bearCart.size() / 3;      
+        for (int i = 0; i < numFreeBears; i++) {
+            tmpBearCart.remove(i);
+        }
+        int accessDiscountNum = 10;
+        double totalDiscountPrice = 0.0;
+        for (int i = 0; i < tmpBearCart.size(); i++) {
+            int numFreeClothes = tmpBearCart.get(i).clothing.size() / 3;
+            for (int j = 0; j < numFreeClothes; j++) {
+                tmpBearCart.get(i).clothing.remove(j);
+            }
+            tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
+            if (tmpBearCart.get(i).clothing.size() - numFreeClothes
+                    + tmpBearCart.get(i).noisemakers.size() >= accessDiscountNum) {
+                tmpBearCart.get(i).price *= .9;
+            }
+            totalDiscountPrice += tmpBearCart.get(i).price;
+        }
+        return totalRawCost - totalDiscountPrice;
+    }  
+
 }

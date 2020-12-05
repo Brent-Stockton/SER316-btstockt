@@ -11,7 +11,7 @@
     <properties>
         <property name="methodReportLevel" value="2"/>
     </properties>
-	</rule>
+	</rule>	
 	<rule ref="category/java/design.xml/CouplingBetweenObjects">
 		<properties>
         <property name="threshold" value="2"/>
@@ -22,6 +22,27 @@
         <property name="minimum" value="100"/>
     </properties>
 	</rule>
+	
+	<!--ADDED-->
+	<rule ref="category/java/design.xml/DuplicateCode">
+    <properties>
+        <property name="DuplicateCode" value="5"/>
+    </properties>
+    </rule>
+	
+    <rule ref="category/java/design.xml/ExcessiveClassLength">
+    <properties>
+        <property name="VariablesUnused" value=""/>
+    </properties>
+    </rule>
+    
+     <rule ref="category/java/design.xml/SwitchStatement">
+    <properties>
+        <property name="SwitchStatement" value=""/>
+    </properties>
+    </rule> 
+    <!--END-->
+    
 	<rule ref="category/java/design.xml/ExcessiveMethodLength">
 		<properties>
 	        <property name="minimum" value="30"/>

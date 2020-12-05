@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GivenWhiteBox" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-02T05:05:36" hostname="Brents-MacBook-Air.local" time="0.004">
+<testsuite name="GivenWhiteBox" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-12-03T03:58:17" hostname="Brents-MacBook-Air.local" time="0.002">
   <properties/>
-  <testcase name="checkoutOneBear" classname="GivenWhiteBox" time="0.004">
+  <testcase name="checkoutOneBear" classname="GivenWhiteBox" time="0.002">
     <failure message="java.lang.AssertionError: expected:&lt;5.35&gt; but was:&lt;32.1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;5.35&gt; but was:&lt;32.1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
